@@ -7,5 +7,5 @@ export enum HomeStepType {
 export type THomeState = { step: HomeStepType };
 export type THomeContext = [THomeState, Dispatch<SetStateAction<THomeState>>];
 
-export const HomeState = { step: HomeStepType.unset };
+export const HomeState: THomeState = { step: HomeStepType.unset };
 export const HomeContext = createContext<THomeContext>([HomeState, () => {}]);

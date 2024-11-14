@@ -25,9 +25,8 @@ const Pages = memo(() => {
     if (target) {
       const Element = lazy(() => import(`./${target}/index.tsx`));
       return (
-        // code splitting...
         <Suspense fallback=''>
-          <Element>Static Pages</Element>
+          <Element />
         </Suspense>
       );
     }
@@ -44,7 +43,6 @@ const App = () => {
     <div className='App'>
       <Context.Provider {...{ value }}>
         <Pages />
-        asdasd
         {state[ActionType.LoadingProcess]?.enabled && <LoadingProcess />}
       </Context.Provider>
     </div>

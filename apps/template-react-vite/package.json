@@ -12,7 +12,6 @@
     "deploy": "touch dist/.nojekyll && gh-pages -d dist -t true"
   },
   "dependencies": {
-    "@faker-js/faker": "^9.2.0",
     "lesca-click": "^4.3.5",
     "lesca-fetcher": "^1.1.7",
     "lesca-react-onload": "^1.0.18",
